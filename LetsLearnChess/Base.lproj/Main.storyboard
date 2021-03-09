@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--letsGo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="letsGo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets Learn About Chess Pieces!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M2-lk-U5E">
+                                <rect key="frame" x="20" y="129.5" width="335" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="89S-r6-yDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX6-QC-KDD">
+                                <rect key="frame" x="130.5" y="309.5" width="114" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Lets GO!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G4k-YP-EBt" kind="show" id="gXw-ji-wc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4M2-lk-U5E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="2Ks-hx-edM"/>
+                            <constraint firstItem="4M2-lk-U5E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="B4r-Sj-3nj"/>
+                            <constraint firstItem="XX6-QC-KDD" firstAttribute="top" secondItem="4M2-lk-U5E" secondAttribute="bottom" constant="100" id="QcC-W5-GRP"/>
+                            <constraint firstItem="4M2-lk-U5E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ajX-YK-hit"/>
+                            <constraint firstItem="XX6-QC-KDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1s-hq-PgM"/>
+                            <constraint firstItem="4M2-lk-U5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hRw-jV-bOs"/>
+                            <constraint firstAttribute="trailing" secondItem="4M2-lk-U5E" secondAttribute="trailing" constant="20" id="ivD-ll-2Om"/>
+                            <constraint firstItem="XX6-QC-KDD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yu5-tt-2bx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O2h-t7-A4t">
+            <objects>
+                <viewController id="G4k-YP-EBt" customClass="ViewController" customModule="LetsLearnChess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijl-43-gqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x0j-9S-dMZ">
+                                <rect key="frame" x="27.5" y="381" width="320" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJm-4I-oZU">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="sZj-dR-LXG"/>
+                                        </constraints>
+                                        <state key="normal" title="knight" image="knight"/>
+                                        <connections>
+                                            <action selector="checkAnswerKnight:" destination="G4k-YP-EBt" eventType="touchUpInside" id="dP9-Mp-cYh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ce-Sk-Jmv">
+                                        <rect key="frame" x="110" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="FxZ-yQ-t56"/>
+                                        </constraints>
+                                        <state key="normal" title="pawn" image="pawn"/>
+                                        <connections>
+                                            <action selector="checkAnswerPawn:" destination="G4k-YP-EBt" eventType="touchUpInside" id="vSK-r9-1hl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-XE-Hmu">
+                                        <rect key="frame" x="220" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="xA8-Vx-LTe"/>
+                                        </constraints>
+                                        <state key="normal" title="king" image="king"/>
+                                        <connections>
+                                            <action selector="checkAnswerKing:" destination="G4k-YP-EBt" eventType="touchUpInside" id="D2w-8K-ZpD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="J1l-G0-KbZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fNs-YI-wde">
+                                <rect key="frame" x="27.5" y="181" width="320" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-fv-HI1">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Zuj-8D-XHb"/>
+                                        </constraints>
+                                        <state key="normal" title="bishop" image="bishop"/>
+                                        <connections>
+                                            <action selector="checkAnswerBishop:" destination="G4k-YP-EBt" eventType="touchUpInside" id="TOv-hl-R6w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkB-QB-ZP6">
+                                        <rect key="frame" x="110" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="xfQ-uo-ceZ"/>
+                                        </constraints>
+                                        <state key="normal" title="rook" image="castle"/>
+                                        <connections>
+                                            <action selector="checkAnswerRook:" destination="G4k-YP-EBt" eventType="touchUpInside" id="l1c-kB-0wp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i64-4x-VoS">
+                                        <rect key="frame" x="220" y="0.0" width="100" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="CPR-xq-3sv"/>
+                                            <constraint firstAttribute="height" constant="105" id="oBk-eE-tbl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="seK-5B-cxo"/>
+                                        </constraints>
+                                        <state key="normal" title="queen" image="queen"/>
+                                        <connections>
+                                            <action selector="checkAnswerQueen:" destination="G4k-YP-EBt" eventType="touchUpInside" id="o06-cH-nmD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="Ie1-ce-ing"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT2-zH-vB0">
+                                <rect key="frame" x="20" y="91" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y18-MV-CbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbb-6j-h71">
+                                <rect key="frame" x="37.5" y="536" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F0p-m1-BRA"/>
+                                    <constraint firstAttribute="width" constant="300" id="ymX-B9-4eg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bXC-VI-mOM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x0j-9S-dMZ" firstAttribute="centerY" secondItem="ijl-43-gqQ" secondAttribute="centerY" constant="100" id="5fQ-AW-vvK"/>
+                            <constraint firstItem="Pbb-6j-h71" firstAttribute="top" secondItem="x0j-9S-dMZ" secondAttribute="bottom" constant="50" id="60a-5A-lyq"/>
+                            <constraint firstItem="Pbb-6j-h71" firstAttribute="centerX" secondItem="ijl-43-gqQ" secondAttribute="centerX" id="7ee-0g-8Md"/>
+                            <constraint firstItem="fNs-YI-wde" firstAttribute="centerY" secondItem="ijl-43-gqQ" secondAttribute="centerY" constant="-100" id="ESE-UR-vBV"/>
+                            <constraint firstItem="xT2-zH-vB0" firstAttribute="centerX" secondItem="ijl-43-gqQ" secondAttribute="centerX" id="Ppf-xm-AT2"/>
+                            <constraint firstItem="fNs-YI-wde" firstAttribute="top" secondItem="xT2-zH-vB0" secondAttribute="bottom" constant="50" id="eaZ-rD-t7j"/>
+                            <constraint firstItem="xT2-zH-vB0" firstAttribute="leading" secondItem="CnO-Ue-wPR" secondAttribute="leading" constant="20" id="efw-dI-77U"/>
+                            <constraint firstItem="x0j-9S-dMZ" firstAttribute="centerX" secondItem="ijl-43-gqQ" secondAttribute="centerX" id="hdc-V8-hd0"/>
+                            <constraint firstItem="fNs-YI-wde" firstAttribute="centerX" secondItem="ijl-43-gqQ" secondAttribute="centerX" id="q1T-I6-GcM"/>
+                            <constraint firstItem="CnO-Ue-wPR" firstAttribute="trailing" secondItem="xT2-zH-vB0" secondAttribute="trailing" constant="20" id="zIZ-G1-Jbj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CnO-Ue-wPR"/>
+                    </view>
+                    <connections>
+                        <outlet property="AnswerQueenButton" destination="i64-4x-VoS" id="qvC-7i-Jqn"/>
+                        <outlet property="answerBishopButton" destination="FFP-fv-HI1" id="IzV-Yl-IE9"/>
+                        <outlet property="answerKingButton" destination="a8Z-XE-Hmu" id="uXE-ML-NEm"/>
+                        <outlet property="answerKnightButton" destination="nJm-4I-oZU" id="8VA-HP-sHr"/>
+                        <outlet property="answerPawnButton" destination="9Ce-Sk-Jmv" id="qnP-Of-FGc"/>
+                        <outlet property="answerRookButton" destination="ZkB-QB-ZP6" id="vtO-rT-hoD"/>
+                        <outlet property="gameOverButton" destination="Pbb-6j-h71" id="GXE-Vh-BTq"/>
+                        <outlet property="questionLabel" destination="xT2-zH-vB0" id="5EX-7d-Gnv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZc-4e-OnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.84057971014499" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bishop" width="160" height="160"/>
+        <image name="castle" width="160" height="160"/>
+        <image name="king" width="160" height="160"/>
+        <image name="knight" width="160" height="160"/>
+        <image name="pawn" width="160" height="160"/>
+        <image name="queen" width="160" height="160"/>
+    </resources>
+</document>
